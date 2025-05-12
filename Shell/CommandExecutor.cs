@@ -8,7 +8,9 @@ namespace Shell
     {
         private readonly List<IBuiltInCommand> builtIns = new List<IBuiltInCommand>
         {
-            new EchoCommand()
+            new EchoCommand(),
+            new LsCommand(),
+            new CdCommand()
         };
 
         public void Execute(Command command)
