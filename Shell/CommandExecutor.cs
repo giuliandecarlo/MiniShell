@@ -10,7 +10,8 @@ namespace Shell
         {
             new EchoCommand(),
             new LsCommand(),
-            new CdCommand()
+            new CdCommand(),
+            new PwdCommand()
         };
 
         public void Execute(Command command)
