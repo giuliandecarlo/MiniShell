@@ -1,5 +1,6 @@
 using System;
 using System.IO;
+using System.Collections.Generic;
 
 namespace Shell.BuiltIn
 {
@@ -13,10 +14,12 @@ namespace Shell.BuiltIn
             try
             {
                 var entries = Directory.GetFileSystemEntries(path);
+                var files = new List <string>();
                 foreach(var entry in entries)
                 {
-                    Console.WriteLine(entry);
+                    files.Add(Path.GetFileName(entry));
                 }
+                Console.WriteLine(string.Join(" ",files));
             }
             catch(Exception ex)
             {
