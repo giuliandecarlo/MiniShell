@@ -11,7 +11,8 @@ namespace Shell
             new EchoCommand(),
             new LsCommand(),
             new CdCommand(),
-            new PwdCommand()
+            new PwdCommand(),
+            new MkdirCommand()
         };
 
         public void Execute(Command command)
