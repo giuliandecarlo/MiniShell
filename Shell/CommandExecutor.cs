@@ -12,7 +12,9 @@ namespace Shell
             new LsCommand(),
             new CdCommand(),
             new PwdCommand(),
-            new MkdirCommand()
+            new MkdirCommand(),
+            new ClearCommand(),
+            new TouchCommand()
         };
 
         public void Execute(Command command)
