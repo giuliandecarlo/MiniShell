@@ -14,7 +14,8 @@ namespace Shell
             new PwdCommand(),
             new MkdirCommand(),
             new ClearCommand(),
-            new TouchCommand()
+            new TouchCommand(),
+            new RmCommand()
         };
 
         public void Execute(Command command)
